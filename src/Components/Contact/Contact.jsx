@@ -2,15 +2,39 @@ import Loader from 'react-loaders';
 import './Contact.scss';
 import AnimateLetters from '../animateLetters/AnimateLetters';
 import { useEffect, useState } from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const  Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+    const  refForm = useRef()
 
     useEffect(() =>{
         setTimeout(() =>{
             setLetterClass('text-animate-hover')
         }, 3000)
     }, [])
+
+    const sendEmmail = (e) => {
+        e.preventDefault()
+        emailjs
+        .sendForm(
+            'gmail',
+            'tjbWqR8BiUTAF4Q6kTlyg',
+            refForm.current,
+            ''
+        )
+
+        .then(
+            () =>{
+                alert('Message successfully sent!')
+                window.location.reload(false)
+            },
+            () =>{
+                alert('Faild to send the message, please try again')
+            }
+        )
+    }
 
     return(
         
@@ -29,7 +53,7 @@ const  Contact = () => {
                         I am interested in freelance opportunities - especially ambitious or larger projects. However,if you have any request or question, donot hesitate to contact  me using the form below ether.   
                     </p>
                     <div className='form'>
-                    <form>
+                    <form ref={refForm} onSubmit={sendEmmail}>
                         <ul>
                             <li className='half'>
                             <input type='text' name='name' placeholder='Enter Your Name' required />
@@ -44,7 +68,7 @@ const  Contact = () => {
                                 <textarea placeholder='Message' name='message' required />
                             </li>
                             <li>
-                                <input type='submit' className='btn' value='SEN'/>
+                                <input type='submit' className='btn' value='SEND'/>
                             </li>
                         </ul>
                     </form>
