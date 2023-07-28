@@ -16,15 +16,14 @@ const  Contact = () => {
     }, [])
 
     const sendEmmail = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         emailjs
         .sendForm(
             'gmail',
-            'tjbWqR8BiUTAF4Q6kTlyg',
+            'y_aD•••••••••••••••••',
             refForm.current,
-            ''
+            'pfXuPn8Zh21xALJs4'
         )
-
         .then(
             () =>{
                 alert('Message successfully sent!')
