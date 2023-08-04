@@ -1,5 +1,5 @@
 import './Sidebar.scss';
-import LogoS from '../../assets/images/logo1.png';
+// import LogoS from '../../assets/images/logo1.png';
 import signBoard from '../../assets/images/logo2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -10,7 +10,7 @@ const Sidebar = () => (
     <div className='nav-bar'>
 
         <Link className='logo' to='/'>
-        <img src={LogoS} alt='logo' />
+        {/* <img src={LogoS} alt='logo' /> */}
         <img className='sub-logo' src={signBoard} alt='logo' />
 
         </Link>

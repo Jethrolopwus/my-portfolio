@@ -29,7 +29,7 @@ const About = () => {
                 
                     <p>I'm a highly motivated frond end developer looking forward ro adding value to an IT company </p>
                     <p>  I'm a Tech enthusiates especially front end, web3 and Blockchain technology</p>
-                    <p>I'm quitly confident and  good at what i do with more that a year experience</p>
+                    <p>I'm quitly confident and  good at what i do with more than two (2) years experience</p>
                     
             </div>
             <div className='stage-cube-cont'>
