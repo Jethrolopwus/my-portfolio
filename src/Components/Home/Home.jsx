@@ -59,15 +59,14 @@ useEffect(() =>{
                     <h2>Front End Engineer/JavaScript Expert/ Digital Marketer</h2>
                     <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
-            
-            <div className='jethro'>
-            <img src={Jethro} alt='jethro' className='jethro' />
-            </div>
-
         </div>
         <Loader type='pacman' />
-        
+       
+                    <div className='jethro'>
+                        <img src={Jethro} alt='jethro' className='jethro' />
+                    </div>
         </>
+        
 
     )
 }
