@@ -40,37 +40,39 @@ const  Contact = () => {
         <>
             <div className='me-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimateLetters 
-                        letterClass={letterClass}
-                        strarray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
-                        index={15}
-                        />
-                    </h1>
+                    <div className='contact'>
+                        <h1>
+                            <AnimateLetters 
+                            letterClass={letterClass}
+                            strarray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'M', 'e']}
+                            index={15}
+                            />
+                        </h1>
 
-                    <p>
-                        I am interested in freelance opportunities - especially ambitious or larger projects. However,if you have any request or question, donot hesitate to contact  me using the form below ether.   
-                    </p>
+                        <p>
+                            I am interested in freelance opportunities - especially ambitious or larger projects. However,if you have any request or question, donot hesitate to contact  me using the form below ether.   
+                        </p>
+                    </div>
                     <div className='form'>
-                    <form ref={refForm} onSubmit={sendEmmail}>
-                        <ul>
-                            <li className='half'>
-                            <input type='text' name='name' placeholder='Enter Your Name' required />
-                            </li>
-                            <li className='half'>
-                            <input type='email' name='email' placeholder='Enter Your Email' required />
-                            </li>
-                            <li>
-                                <input placeholder='Subject' type='text' name='subject' required />
-                            </li>
-                            <li>
-                                <textarea placeholder='Message' name='message' required />
-                            </li>
-                            <li>
-                                <input type='submit' className='btn' value='SEND'/>
-                            </li>
-                        </ul>
-                    </form>
+                        <form ref={refForm} onSubmit={sendEmmail}>
+                            <ul>
+                                <li className='half'>
+                                <input type='text' name='name' placeholder='Enter Your Name' required />
+                                </li>
+                                <li className='half'>
+                                <input type='email' name='email' placeholder='Enter Your Email' required />
+                                </li>
+                                <li>
+                                    <input placeholder='Subject' type='text' name='subject' required />
+                                </li>
+                                <li>
+                                    <textarea placeholder='Message' name='message' required />
+                                </li>
+                                <li>
+                                    <input type='submit' className='btn' value='SEND'/>
+                                </li>
+                            </ul>
+                        </form>
 
                     </div>
 

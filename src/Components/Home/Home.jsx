@@ -11,11 +11,14 @@ import Jethro from '../../assets/images/Jethro.jpg'
 const Home = () => {
 const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = ['J','e', 't', 'h', 'r', 'o'];
+    const nameArray = ['J','e', 't', 'h', 'r', 'o', ' ', 'L', 'o', 'p', 'w', 'u', 's'];
     const jobArray = [ 
+    'a',
+    ' ',
     'w',
     'e',
     'b',
+    ' ',
     'd',
     'e',
     'v',
@@ -25,7 +28,7 @@ const [letterClass, setLetterClass] = useState('text-animate')
     'p',
     'e',
     'r',
-    '.'
+
 ]
 
 
@@ -57,7 +60,7 @@ useEffect(() =>{
                     strarray={jobArray} 
                     index={22} />
                 </h1>
-                    <h2>Front End Engineer/JavaScript Expert/ Digital Marketer</h2>
+                    <h2>Front End Engineer</h2>
                     <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
                 <div className='jethro'>
